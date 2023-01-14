@@ -22,7 +22,7 @@ class RegressionToMulti(MultiModel):
         :param B: numpy vector of shape :math:`n`
         :param T: numpy vector of shape :math:`n`
         '''
-        G = numpy.array(G, dtype=numpy.int)
+        G = numpy.array(G, dtype=numpy._int)
         n, = G.shape
         self._n_groups = max(G) + 1
         X = numpy.zeros((n, self._n_groups), dtype=numpy.bool)
